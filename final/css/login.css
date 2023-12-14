@@ -1,0 +1,90 @@
+html{
+    background-color: #f3f2f1;
+}
+
+.loginBody{
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginBody .loginHead{
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+.loginBody .loginHead h1{
+    color: green;
+    font-size: 50px;
+}
+
+.loginBody .loginHead p{
+    font-size: 20px;
+}
+
+.loginBoard{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginBoard .loginInput{
+    width: 50%;
+    height: 50px;
+    margin: 10px;
+    font-size: 30px;
+
+    border: 5px outset green;
+    border-radius: 10px;
+}
+
+.signIn{
+    margin: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: green;
+    width: 50%;
+    height: 50px;
+    border: 5px solid green;
+    border-radius: 10px;
+}
+
+.loginBoard .signInput{
+    width: 50%;
+    height: 50px;
+    margin: 10px;
+    font-size: 20px;
+
+    border-radius: 10px;
+}
+
+.divideLine{
+    border: 1.5px slid lightgray;
+    width: 48%;
+}
+
+.agreeTermDiv{
+    width: 50%;
+    align-items: left;
+}
+
+.radioDiv{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    background-image:none;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+.radioDiv .genderRadio{
+    width: 1.2em;
+    height: 1.2em;
+    font-size: 20px;
+    margin: 10px;
+}

@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+body{
+  margin:0;
+  line-height: 1.5;
+  background-color: #f3f2f1;
+ }
+ body,
+ input,
+ textarea,
+ 
+ button{
+ 	font-family: 'Raleway', sans-serif;
+ 	font-weight: 400;
+ }
+
+ .container{
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+  background-color: white;
+}
+
+header{
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 10px;
+}
+
+header .headerMenu{
+  font-weight: bold;
+  color: green;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+header .headerMenu :hover{
+  cursor: pointer;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.align-items-center{
+  align-items: center;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+
+.subject{
+  font-size: 40px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  margin-bottom: 10px;
+  
+}
+
+.navBase{
+  display: grid;
+  /* grid-template-columns: 1fr 1170px 1fr; */
+  grid-template-rows: 70px 10px;
+}
+
+.navBase .navBar{
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+}
+
+.navBase .navBar .navBtn{
+  width: fit-content;
+  height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px 0 40px;
+}
+
+.navBase .navBar .navBtn:hover{
+  background-color: green;
+  color: white;
+  border-color: green;
+}
+
+.navBase .decoBar{
+  background-color: green;
+  grid-row: 2;
+  height: 10px;
+}
+
+.mainBoard{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  border : 2px solid whitesmoke;
+}
+
+.mainBoard .product{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-bottom: 1px dotted black;
+}
+
+.mainBoard .product .thumbnailMain{
+  width: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 50px 0 30px;
+  
+}
+
+.mainBoard .product .infoMain{
+  margin: 30px;
+  width: 100%;
+}
+
+.infoMain .attribute{
+  font-weight: bold;
+  width: 70px;
+}
+
+.product aside{
+  float: right;
+}
+
+.ticketBtn{
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  color: green;
+  background-color: white;
+  border: 3px solid green;
+  border-radius: 5px;
+}
+
+.ticketBtn:hover{
+  color: white;
+  background-color: green;
+  border:0px
+}
+
+.De_title{
+  flex:0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.De_title h1{
+  display: inline-block;
+  font-size: 40px;
+  color:#000000;
+  font-weight: 700;
+  margin:0;
+  position: relative;
+}
+
+.De_title h1:before{
+  content:'';
+  box-sizing: border-box;
+  position: absolute;
+  left:0;
+  bottom:-5px;
+  width: 1100px;
+  height: 2px;
+  background-color: black; 
+}
+
+.De_info{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  margin-bottom: 40px;
+}
+
+
+
+th{
+  width: 13%;
+}
+
+.detail-section .De_img .img-box img{
+	width: 100%;
+	display: block;
+} 
+
+.detail-section .about_De{
+	padding-top: 5x;
+  width: 100%;
+  display: block;
+}
+
+.detail-section .about_De p{
+	font-size: 25px;
+	color:#555555;
+	line-height: 26px;
+  white-space: pre-line;
+	margin: 3px;
+}
+
+.about_De .Info{
+  font-weight: 700;
+}
+
+.Date{
+  width: 100%;
+}
+
+.Select_Buy .calender{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.Select_Buy .calender .Month p{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.calendar-date:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: aqua;
+}
+
+.Select_Buy .available_seats{
+  padding-top: 0;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border: 1px solid lightgray;
+}
+
+.Select_Buy .available_seats p{
+  font-weight: 700;
+}
+
+.Select_Buy .Buy_Show{
+  margin-top: 40px;
+  display: flex;          
+  align-items: center;
+  justify-content: center; 
+  height: 50px;
+  padding: -10px;
+  width: 100%;
+  font-size: 20px;
+  background-color: rgb(83, 173, 83);
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+.Select_Buy .Buy_Show:hover{
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.info_tap{
+  display: flex;          /* Flex 컨테이너로 설정 */
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid lightgray;
+  margin-bottom: 40px;
+}
+
+.i_tap{
+  display: flex;          
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #634a4a;
+  color: white;
+  font-size: 20px;
+  justify-content: center; 
+}
+
+.show_info{
+  padding-left: 20px;
+}
+
+.Pay{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+  background-color: white;
+}
+
+.Pay_tap{
+  width: 100%;
+  height: 40px;
+  background-color: #634a4a;
+  border: 1px solid lightgray;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  color: #f3f2f1;
+  border: 1px solid white;
+}
+
+.Pay_Date{
+  display: grid;
+  text-align: center;
+}
+
+.Pay_Month{
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.Pay_left{
+  display: flex;
+  width: 100%;
+}
+
+.Select_Seats{
+  width: 100%;
+}
+
+.Select_RSA{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.Select_R{
+  display: flex; 
+  align-items: center;
+}
+.Select_S{
+  display: flex; 
+  align-items: center;
+}
+
+.Select_A{
+  display: flex; 
+  align-items: center;
+}
+
+.Select_S1{
+  flex: 0.5;
+}
+
+.Select_Card{
+  width: 100%;
+}
+
+.Card{
+  width: 50%;
+  height: 40px;
+  font-size: 20px;
+}
+
+.Buy_Now{
+  margin-top: 40px;
+  display: flex;          
+  align-items: center;
+  justify-content: center; 
+  height: 50px;
+  padding: -10px;
+  width: 100%;
+  font-size: 20px;
+  background-color: rgb(83, 173, 83);
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+.Buy_Now:hover{
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.mypage{
+  display: grid;
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+  background-color: white;
+}
+
+.mypagetap{
+  width: 100%;
+  height: 40px;
+  background-color: #634a4a;
+  border: 1px solid lightgray;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  color: #f3f2f1;
+  border: 1px solid white;
+}
+
+.mp{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  align-items: center;
+  margin: 20px;
+}
+
+.mptap{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #555555;
+}
+
+footer .foot_container{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 1100px;
+}
+
+footer .foot_container .main_foot{
+  font-size: 30px;
+  font-weight: 600;
+  color: #f3f2f1;
+}
+
+footer .foot_container .info_foot{
+  font-size: 15px;
+  color: white;
+}
