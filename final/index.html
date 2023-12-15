@@ -20,7 +20,7 @@
             <br>
             <div class="navBase">
                 <div class="navBar" style="background-image: url(./img/icon_image.png);">
-                    <button class="navBtn">Home</button>
+                    <button class="navBtn" id="homeBtn">Home</button>
                     <button class="navBtn">Concert</button>
                     <button class="navBtn">Musical</button>
                     <button class="navBtn">Exhibition</button>
@@ -37,7 +37,7 @@
                     <div class="infoMain">
                             <aside><button class="ticketBtn" id="ticketBtn">Buy Ticket</button></aside>
                         <div class="infoTitle">
-                            <h3><span>[Location]</span> title</h3>
+                            <h3><span id="title1">IL TENORE</span> title</h3>
                         </div>
                         <table>
                             <tr>
@@ -81,15 +81,15 @@
                     </div>
                     <div class="about_De">
                         <p class="Info">Genre</p>
-                        <p class="De_Genre" id="De_Genre"> Musical <p>
+                        <p class="De_Genre" id="De_Genre"> Musica <p>
                         <p class="Info">Venue</p>
-                        <p class="De_Venue" id="De_Venue"> SKKU ConcertHall <p>
+                        <p class="De_Venue" id="De_Venue"> SKKU ConcertHal <p>
                         <p class="Info">Date</p>
                         <p class="De_Date" id="De_Date"> 2023.12.19 <p>
                         <p class="Info">Running time</p>
-                        <p class="De_RT" id="De_RT"> 160 min <p>
+                        <p class="De_RT" id="De_RT"> 16 min <p>
                         <p class="Info">Price</p>
-                        <p class="De_Price" id="De_Price">R석 - 160,000 KRW <br>  S석 - 120,000 KRW <br>A석 - 80,000 KRW                    <p>           
+                        <p class="De_Price" id="De_Price">VIP - <span id="VP">160,000</span>KRW<br>R - <span id="RP">140,000</span>KRW<br>S - <span id="SP">120,000</span>KRW <br>A - <span id="AP">80,000</span>KRW                    <p>           
                     </div>
                     <div class="Select_Buy">
                         <div class="calender">
@@ -169,7 +169,7 @@
                         <div class="available_seats">
                             <p>number of available Seats</p>
                             <div class="left_seats" id="left_seats">
-                                25
+                                <span id="left_seat">25</span>
                             </div>
                         </div>
                         <div class="Buy_Show" id="Buy_Show">
@@ -184,17 +184,7 @@
                         show info 
                     </div>
                     <div class="show_info">
-                        <p>[공연시간 정보]</p>
-                        <p>2023년 12월 19일(화) ~ 2024년 02월 25일(일)</p>
-                        <p>※ 극장, 공연제작사 및 관계사의 협의에 따라 일부 좌석이 마감되었습니다.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p>The release date got pushed back to early 2014</p>
-                        <p>You're getting far too cheeky!</p>
-                        <p>What's remote? - Like this? What's remote?</p>
-                        <p>The“ym” returns the number of remaining months past the last full year</p>
-                        <p>Their number remains unclear.</p>
-                        <p>with a valid social security number and credit card history.</p>
-                        <p>address and credit card number</p>
+                        <span id="show_info"></span>
                     </div>
                 </div>
             </div>
@@ -293,7 +283,7 @@
                 </div>
                 <div class="row">
                     <div class="Pay_left">
-                        <p>● Left Seats : </p><p class="left_seats" id="left_seats"> 25</p>
+                        <p>● Left Seats : </p><p class="left_seats" id="pleft_seats"> 25</p>
                     </div>
                     <div class="Select_Seats">
                         <div>
@@ -302,49 +292,42 @@
                         <div>
                             <div class="Select_RSA">
                                 <div>
-                                    <p>R석 - 160,000 KRW </p>
+                                    <p>VIP - <span id="pVP">160,000</span> KRW </p>
+                                </div>
+                                <div class="Select_V">
+                                    <select id="SV">
+                                    </select>
+                                </div>
+                                <div>
+                                    <p>R - <span id="pRP">160,000</span> KRW </p>
                                 </div>
                                 <div class="Select_R">
-                                    <select id="R">
-                                        <option value="0">0</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
+                                    <select id="SR">
                                     </select>
                                 </div>
                             </div>
                             <div class="Select_RSA">
                                 <div>
-                                    <p>S석 - 120,000 KRW </p>
+                                    <p>S - <span id="pSP">120,000</span> KRW </p>
                                 </div>
                                 <div class="Select_S">
                                     <div class="Select_S1">
-                                        <select id="S">
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
+                                        <select id="SS">
                                         </select>
                                     </div>
-                                    <div class="Select_S2">
-                                        total :  
-                                    </div>
-                                    <div class="Select_S3">
-                                        <p class="totalv" id="totalv"> 360,000 </p>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="Select_RSA">
                                 <div>
-                                    <p>A석 - 80,000 KRW </p>
+                                    <p>A - <span id="pAP">80,000</span> KRW </p>
                                 </div>
                                 <div class="Select_A">
-                                    <select id="A">
-                                        <option value="0">0</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
+                                    <select id="SA">
                                     </select>
+                                </div>
+                                <div class="Select_S3">
+                                    <p >total : <span class="totalv" id="totalv" >0</span>KRW</p>
                                 </div>
                             </div>
                         </div>
@@ -355,10 +338,7 @@
                         </div>
                         <div class="SC">
                             <select id="Card" class="Card">
-                                <option id="Card1" value="0">10023873589690</option>
-                                <option id="Card2" value="1">10023873589691</option>
-                                <option id="Card3" value="2">10023873589692</option>
-                                <option id="Card4" value="3">10023873589693</option>
+                                
                             </select>
                         </div>
                     </div>
@@ -382,7 +362,7 @@
                         ID
                     </div>
                     <div>
-                        ID 고정
+                        <span id="mpId">ID 고정</span>
                     </div>
                 </div>
                 <div class="mp">
@@ -390,7 +370,7 @@
                         Phone number
                     </div>
                     <div>
-                        0102548465411
+                        <span id="mpPh">0102548465411</span>
                     </div>
                     <div class="Changenum">
                         <input type="text" value="" class="NumText">
@@ -403,13 +383,12 @@
                         My Card
                     </div>
                     <div class="mpCard">
-                        10023873589690<br>
-                        10023873589691<br>
-                        10023873589692<br>
-                        10023873589693
+                        <span id="mpCa"></span>
+                        10023873589690
+
                     </div>
                     <div class="mpAddCard">
-                        <input type="text" value="" class="CardText">
+                        <input type="text" value="" pattern="\d{14}" class="CardText" id="CardText">
                         <button class="AddCard" id="AddCard">Add</button>
 
                     </div>
@@ -419,11 +398,8 @@
                         Reservation history
                     </div>
                     <div class="mpReInfo">
+                        <span id="mpRI"></span>
                         공연 이름 - 공연 일시 1 <br>
-                        공연 이름 - 공연 일시 2 <br>
-                        공연 이름 - 공연 일시 3 <br>
-                        공연 이름 - 공연 일시 4 <br>
-                        공연 이름 - 공연 일시 5 <br>
                     </div>
                 </div>
             </div>
