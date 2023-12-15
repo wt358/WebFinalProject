@@ -7,6 +7,31 @@ let validPW=false;
 let validConfirmPW=false;
 let validDate=false;
 
+function makeShowList(showList){
+    console.log(showList.length);
+    // for(i=0;i<showList.length;i++){
+    //     $('#{}')
+    // }
+    for(let i=0;i<showList.length;i++){
+        $(`#product${i}`).show();
+        console.log(showList[i]['thumbnail']);
+        $(`#thumbnailMain${i}`).css('background-image',`url(${showList[i]['thumbnail']})`);
+        $(`#genre${i}`).text(`: ${showList[i]['Genre']}`);
+        $(`#venue${i}`).text(`: ${showList[i]['Venue']}`);
+        $(`#date${i}`).text(`: ${showList[i]['start_date'].substr(0,10)} ~ ${showList[i]['end_date'].substr(0,10)}`);
+        console.log();
+        var priceStr=": ";
+        for(let seat of Object.keys(showList[i]['price'])){
+            priceStr=priceStr+seat+" "+showList[i]['price'][seat]+ "KRW | ";
+        }
+        $(`#price${i}`).text(`${priceStr}`);
+    }
+    
+    // var productNo=eval("#product"+1);
+    // console.log(productNo);
+    // $(eval('#product'+'1')).show();
+}
+
 function checkValidName(name,inputID,alertID){
     let textPrint='';
     if(inputID.indexOf('First')!=-1)
@@ -34,6 +59,15 @@ function checkValidName(name,inputID,alertID){
 }
 
 $(document).ready(function() {
+
+    if(!("showList" in localStorage)){
+        $.getJSON('show.json',function(data){
+            // console.log(data);
+            localStorage.setItem("showList",JSON.stringify(data));
+        })
+    }
+    var showList=JSON.parse(localStorage.getItem("showList"))
+    makeShowList(showList);
 
     if("currentUser" in localStorage){
         $('#headerSignUp').hide();
