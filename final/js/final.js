@@ -6,25 +6,41 @@ let validPhone=false;
 let validPW=false;
 let validConfirmPW=false;
 let validDate=false;
+let indexShow=0;
+function makeShowList(navMode){
+    // localStorage.removeItem('showList');
 
-function makeShowList(showList){
-    console.log(showList.length);
+    if(!("showList" in localStorage)){
+        $.getJSON('show.json',function(data){
+            console.log(data);
+            localStorage.setItem("showList",JSON.stringify(data));
+        })
+    }
+    var showList=JSON.parse(localStorage.getItem("showList"))
+    console.log(showList);
     // for(i=0;i<showList.length;i++){
     //     $('#{}')
     // }
+
+    for(let i=0;i<5;i++)
+        $(`#product${i}`).hide();
+
     for(let i=0;i<showList.length;i++){
+        if(navMode!="Home")
+            if(showList[i]['Genre']!=navMode){
+                continue;
+            }
         $(`#product${i}`).show();
-        console.log(showList[i]['thumbnail']);
         $(`#thumbnailMain${i}`).css('background-image',`url(${showList[i]['thumbnail']})`);
         $(`#genre${i}`).text(`: ${showList[i]['Genre']}`);
         $(`#venue${i}`).text(`: ${showList[i]['Venue']}`);
         $(`#date${i}`).text(`: ${showList[i]['start_date'].substr(0,10)} ~ ${showList[i]['end_date'].substr(0,10)}`);
-        console.log();
         var priceStr=": ";
         for(let seat of Object.keys(showList[i]['price'])){
             priceStr=priceStr+seat+" "+showList[i]['price'][seat]+ "KRW | ";
         }
         $(`#price${i}`).text(`${priceStr}`);
+        $(`#title${i+1}`).text(`${showList[i]['name']}`);
     }
     
     // var productNo=eval("#product"+1);
@@ -74,258 +90,23 @@ $(document).ready(function() {
     var selectr;
     var selects;
     var selecta;
+   
+    // var showList=[];
+    // showList.push(showInfoJson);
+    // localStorage.setItem("showinfo",JSON.stringify(showList));
 
-    var showInfoJson =[
-        {
-            "showId":"12345",
-            "name":"IL TENORE",
-            "Genre":"Musical",
-            "thumbnail":"./img/pst_1025.jpg",
-            "Venue":"SKKU ConcertHall",
-            "start_date":"2023-12-19",
-            "end_date":"2023-12-31",
-            "remainSeatV":[
-                {
-                    "seatV":25,
-                    "seatR":1,
-                    "seatS":1,
-                    "seatA":123
-                },
-                {
-    
-                }
-            ],
-            "price":{
-                "VIP":160000,
-                "R":130000,
-                "S":123123,
-                "A":80000
-            },
-            "rating":"19",
-            "runningTime":"160min",
-            "score":9.0,
-            "showInfo":[
-                " [공연시간 정보]\n ",
-                " 2023년 12월 19일(화) ~ 2024년 02월 25일(일) ",
-                " ※ 극장, 공연제작사 및 관계사의 협의에 따라 일부 좌석이 마감되었습니다.",
-                " Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                " The release date got pushed back to early 2014",
-                " You're getting far too cheeky!",
-                " What's remote? - Like this? What's remote?",
-                " The“ym” returns the number of remaining months past the last full year",
-                " Their number remains unclear.",
-                " with a valid social security number and credit card history.",
-                " address and credit card number."
-
-            ]
-        },
-        {
-            "showId":"123452",
-            "name":"IL TENORE2",
-            "Genre":"Musical",
-            "thumbnail":"./img/concert_bol4.png",
-            "Venue":"SKKU ConcertHall",
-            "start_date":"2023-04-04T00:00:00",
-            "end_date":"2023-04-04T00:00:00",
-            "remainSeatV":[
-                {
-                    "seatV":21,
-                    "seatR":121,
-                    "seatS":121,
-                    "seatA":131
-                },
-                {
-                    "seatV":22,
-                    "seatR":122,
-                    "seatS":122,
-                    "seatA":132
-                },{
-                    "seatV":23,
-                    "seatR":123,
-                    "seatS":123,
-                    "seatA":133
-                },{
-                    "seatV":24,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":25,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":26,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":27,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":28,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":29,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":20,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":211,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },
-                {
-                    "seatV":21,
-                    "seatR":121,
-                    "seatS":121,
-                    "seatA":131
-                },
-                {
-                    "seatV":22,
-                    "seatR":122,
-                    "seatS":122,
-                    "seatA":132
-                },{
-                    "seatV":23,
-                    "seatR":123,
-                    "seatS":123,
-                    "seatA":133
-                },{
-                    "seatV":24,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":25,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":26,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":27,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":28,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":29,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":20,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":211,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":21,
-                    "seatR":121,
-                    "seatS":121,
-                    "seatA":131
-                },
-                {
-                    "seatV":22,
-                    "seatR":122,
-                    "seatS":122,
-                    "seatA":132
-                },{
-                    "seatV":23,
-                    "seatR":123,
-                    "seatS":123,
-                    "seatA":133
-                },{
-                    "seatV":24,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":25,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":26,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":27,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":28,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                },{
-                    "seatV":29,
-                    "seatR":12,
-                    "seatS":12,
-                    "seatA":13
-                }
-            ],
-            "price":{
-                "VIP":160000,
-                "R":130000,
-                "S":123123,
-                "A":80000
-            },
-            "rating":"19",
-            "runningTime":"160min",
-            "score":9.0,
-            "showInfo": [
-                " [공연시간 정보] ",
-                " 2023년 12월 19일(화) ~ 2024년 02월 25일(일) "
-            ]
-        }
-    ];
-    
-    var showList=[];
-    showList.push(showInfoJson);
-    localStorage.setItem("showinfo",JSON.stringify(showList));
-    
-    var Listshow = localStorage.getItem("showinfo");
+    makeShowList("Home");
+    var Listshow = localStorage.getItem("showList");
     Listshow = JSON.parse(Listshow);
     console.log("111111");
-    console.log(Listshow[0][1]['remainSeatV'][0]['seatV']);
-    console.log(Listshow[0][1]['showInfo']);
+    console.log(Listshow);
+    // console.log(Listshow[0][1]['remainSeatV'][0]['seatV']);
+    // console.log(Listshow[0][1]['showInfo']);
     console.log("11111");
 
     
 
-    if(!("showList" in localStorage)){
-        $.getJSON('show.json',function(data){
-            // console.log(data);
-            localStorage.setItem("showList",JSON.stringify(data));
-        })
-    }
-    var showList=JSON.parse(localStorage.getItem("showList"))
-    makeShowList(showList);
+    
 
     if("currentUser" in localStorage){
         $('#headerSignUp').hide();
@@ -631,13 +412,19 @@ $(document).ready(function() {
     })
 
 
-    $("#ticketBtn").on("click", function() {
+    $(".ticketBtn").on("click", function() {
+        console.log($(this).parent().parent().parent().find('span').text());
         $('#main_section').css('display', 'none');
         $('#detail_section').css('display', 'block');
         var a = $('#title1').text();
-        SN = $('#title1').text();
-        $.each(Listshow[0], function(index, value) {
+        var a = $(this).parent().parent().parent().find('span').text();
+        SN =a;
+        console.log(a,Listshow);
+        $.each(Listshow, function(index, value) {
+            // console.log(index);
+            console.log(value);
             if(a==value['name']){
+                indexShow=index;
                 console.log(value['price']['VIP']);
                 $("#VP").text(value['price']['VIP']);
                 $("#RP").text(value['price']['R']);
@@ -652,6 +439,9 @@ $(document).ready(function() {
                 $("#pRP").text(value['price']['R']);
                 $("#pSP").text(value['price']['S']);
                 $("#pAP").text(value['price']['A']);
+
+                $("#detailTitle").text(a);
+                $("#detailImg").attr("src", value['thumbnail']);
 
                 Vp = value['price']['VIP'];
                 Rp = value['price']['R'];
@@ -676,13 +466,13 @@ $(document).ready(function() {
         //console.log(clickedDate);
         $(".calendar-date").css('background-color',"white");
         $(this).css('background-color',"green");
-        //console.log(Listshow[0][1]['remainSeatV'][0]);
-        Vt = Listshow[0][1]['remainSeatV'][clickedDate-1]['seatV'];
-        Rt = Listshow[0][1]['remainSeatV'][clickedDate-1]['seatR'];
-        St = Listshow[0][1]['remainSeatV'][clickedDate-1]['seatS'];
-        At = Listshow[0][1]['remainSeatV'][clickedDate-1]['seatA'];
-        $("#left_seat").text("VIP : " + Listshow[0][1]['remainSeatV'][clickedDate-1]['seatV'] + "  R : " + Listshow[0][1]['remainSeatV'][clickedDate-1]['seatR'] + "  S : " + Listshow[0][1]['remainSeatV'][clickedDate-1]['seatS'] + "  A : " + Listshow[0][1]['remainSeatV'][clickedDate-1]['seatA']);
-        $("#pleft_seats").text("VIP : " + Listshow[0][1]['remainSeatV'][clickedDate-1]['seatV'] + "  R : " + Listshow[0][1]['remainSeatV'][clickedDate-1]['seatR'] + "  S : " + Listshow[0][1]['remainSeatV'][clickedDate-1]['seatS'] + "  A : " + Listshow[0][1]['remainSeatV'][clickedDate-1]['seatA']);
+        console.log(Listshow[indexShow]['remainSeatV'][0]);
+        Vt = Listshow[indexShow]['remainSeatV'][clickedDate-1]['seatV'];
+        Rt = Listshow[indexShow]['remainSeatV'][clickedDate-1]['seatR'];
+        St = Listshow[indexShow]['remainSeatV'][clickedDate-1]['seatS'];
+        At = Listshow[indexShow]['remainSeatV'][clickedDate-1]['seatA'];
+        $("#left_seat").text("VIP : " + Listshow[indexShow]['remainSeatV'][clickedDate-1]['seatV'] + "  R : " + Listshow[indexShow]['remainSeatV'][clickedDate-1]['seatR'] + "  S : " + Listshow[indexShow]['remainSeatV'][clickedDate-1]['seatS'] + "  A : " + Listshow[indexShow]['remainSeatV'][clickedDate-1]['seatA']);
+        $("#pleft_seats").text("VIP : " + Listshow[indexShow]['remainSeatV'][clickedDate-1]['seatV'] + "  R : " + Listshow[indexShow]['remainSeatV'][clickedDate-1]['seatR'] + "  S : " + Listshow[indexShow]['remainSeatV'][clickedDate-1]['seatS'] + "  A : " + Listshow[indexShow]['remainSeatV'][clickedDate-1]['seatA']);
     
     });
 
@@ -827,11 +617,13 @@ $(document).ready(function() {
 
     });
 
-    $("#homeBtn").on("click", function() {
+    $(".navBtn").on("click", function() {
+        navMode=$(this).text();
         $('#main_section').css('display', 'block');
         $('#detail_section').css('display', 'none');
         $('#pay_section').css('display', 'none');
         $('#mp_section').css('display', 'none');
+        makeShowList(navMode);
     });
 
 });

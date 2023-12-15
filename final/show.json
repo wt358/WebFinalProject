@@ -5,18 +5,169 @@
         "Genre":"Musical",
         "thumbnail":"./img/pst_1025.jpg",
         "Venue":"SKKU ConcertHall",
-        "start_date":"2023-04-04T00:00:00",
-        "end_date":"2023-04-04T00:00:00",
+        "start_date":"2023-04-04",
+        "end_date":"2023-04-04",
         "remainSeatV":[
-            {
-                "seatV":25,
-                "seatR":1,
-                "seatS":1,
-                "seatA":123
-            },
-            {
-
-            }
+                {
+                    "seatV":21,
+                    "seatR":121,
+                    "seatS":121,
+                    "seatA":131
+                },
+                {
+                    "seatV":22,
+                    "seatR":122,
+                    "seatS":122,
+                    "seatA":132
+                },{
+                    "seatV":23,
+                    "seatR":123,
+                    "seatS":123,
+                    "seatA":133
+                },{
+                    "seatV":24,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":25,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":26,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":27,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":28,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":29,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":20,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":211,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },
+                {
+                    "seatV":21,
+                    "seatR":121,
+                    "seatS":121,
+                    "seatA":131
+                },
+                {
+                    "seatV":22,
+                    "seatR":122,
+                    "seatS":122,
+                    "seatA":132
+                },{
+                    "seatV":23,
+                    "seatR":123,
+                    "seatS":123,
+                    "seatA":133
+                },{
+                    "seatV":24,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":25,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":26,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":27,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":28,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":29,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":20,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":211,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":21,
+                    "seatR":121,
+                    "seatS":121,
+                    "seatA":131
+                },
+                {
+                    "seatV":22,
+                    "seatR":122,
+                    "seatS":122,
+                    "seatA":132
+                },{
+                    "seatV":23,
+                    "seatR":123,
+                    "seatS":123,
+                    "seatA":133
+                },{
+                    "seatV":24,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":25,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":26,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":27,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":28,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":29,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                }
         ],
         "price":{
             "VIP":160000,
@@ -27,7 +178,19 @@
         "rating":"19",
         "runningTime":"160min",
         "score":9.0,
-        "showInfo":"loremlorem"
+        "showInfo":[
+                " [공연시간 정보]\n ",
+                " 2023년 12월 19일(화) ~ 2024년 02월 25일(일) ",
+                " ※ 극장, 공연제작사 및 관계사의 협의에 따라 일부 좌석이 마감되었습니다.",
+                " Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                " The release date got pushed back to early 2014",
+                " You're getting far too cheeky!",
+                " What's remote? - Like this? What's remote?",
+                " The“ym” returns the number of remaining months past the last full year",
+                " Their number remains unclear.",
+                " with a valid social security number and credit card history.",
+                " address and credit card number."
+            ]
     },
     {
         "showId":"11111",
@@ -35,18 +198,169 @@
         "Genre":"Concert",
         "thumbnail":"./img/concert_bol4.png",
         "Venue":"SKKU ConcertHall1",
-        "start_date":"2023-12-24T00:00:00",
-        "end_date":"2023-12-25T00:00:00",
+        "start_date":"2023-12-24",
+        "end_date":"2023-12-25",
         "remainSeatV":[
-            {
-                "seatV":25,
-                "seatR":1,
-                "seatS":1,
-                "seatA":123
-            },
-            {
-
-            }
+                {
+                    "seatV":21,
+                    "seatR":121,
+                    "seatS":121,
+                    "seatA":131
+                },
+                {
+                    "seatV":22,
+                    "seatR":122,
+                    "seatS":122,
+                    "seatA":132
+                },{
+                    "seatV":23,
+                    "seatR":123,
+                    "seatS":123,
+                    "seatA":133
+                },{
+                    "seatV":24,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":25,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":26,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":27,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":28,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":29,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":20,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":211,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },
+                {
+                    "seatV":21,
+                    "seatR":121,
+                    "seatS":121,
+                    "seatA":131
+                },
+                {
+                    "seatV":22,
+                    "seatR":122,
+                    "seatS":122,
+                    "seatA":132
+                },{
+                    "seatV":23,
+                    "seatR":123,
+                    "seatS":123,
+                    "seatA":133
+                },{
+                    "seatV":24,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":25,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":26,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":27,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":28,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":29,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":20,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":211,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":21,
+                    "seatR":121,
+                    "seatS":121,
+                    "seatA":131
+                },
+                {
+                    "seatV":22,
+                    "seatR":122,
+                    "seatS":122,
+                    "seatA":132
+                },{
+                    "seatV":23,
+                    "seatR":123,
+                    "seatS":123,
+                    "seatA":133
+                },{
+                    "seatV":24,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":25,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":26,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":27,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":28,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":29,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                }
         ],
         "price":{
             "VIP":160000,
@@ -57,7 +371,20 @@
         "rating":"A",
         "runningTime":"180min",
         "score":9.5,
-        "showInfo":"loremlorem"
+        "showInfo":[
+                " [공연시간 정보]\n ",
+                " 2023년 12월 19일(화) ~ 2024년 02월 25일(일) ",
+                " ※ 극장, 공연제작사 및 관계사의 협의에 따라 일부 좌석이 마감되었습니다.",
+                " Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                " The release date got pushed back to early 2014",
+                " You're getting far too cheeky!",
+                " What's remote? - Like this? What's remote?",
+                " The“ym” returns the number of remaining months past the last full year",
+                " Their number remains unclear.",
+                " with a valid social security number and credit card history.",
+                " address and credit card number."
+
+            ]
     },
     {
         "showId":"22222",
@@ -65,22 +392,192 @@
         "Genre":"Exhibition",
         "thumbnail":"./img/exhibition_gogh.png",
         "Venue":"SKKU ConcertHall3",
-        "start_date":"2023-12-20T00:00:00",
-        "end_date":"2023-12-30T00:00:00",
+        "start_date":"2023-12-20",
+        "end_date":"2023-12-30",
         "remainSeatV":[
-            {
-                "seatR":123
-            },
-            {
-
-            }
+                {
+                    "seatV":21,
+                    "seatR":121,
+                    "seatS":121,
+                    "seatA":131
+                },
+                {
+                    "seatV":22,
+                    "seatR":122,
+                    "seatS":122,
+                    "seatA":132
+                },{
+                    "seatV":23,
+                    "seatR":123,
+                    "seatS":123,
+                    "seatA":133
+                },{
+                    "seatV":24,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":25,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":26,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":27,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":28,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":29,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":20,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":211,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },
+                {
+                    "seatV":21,
+                    "seatR":121,
+                    "seatS":121,
+                    "seatA":131
+                },
+                {
+                    "seatV":22,
+                    "seatR":122,
+                    "seatS":122,
+                    "seatA":132
+                },{
+                    "seatV":23,
+                    "seatR":123,
+                    "seatS":123,
+                    "seatA":133
+                },{
+                    "seatV":24,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":25,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":26,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":27,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":28,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":29,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":20,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":211,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":21,
+                    "seatR":121,
+                    "seatS":121,
+                    "seatA":131
+                },
+                {
+                    "seatV":22,
+                    "seatR":122,
+                    "seatS":122,
+                    "seatA":132
+                },{
+                    "seatV":23,
+                    "seatR":123,
+                    "seatS":123,
+                    "seatA":133
+                },{
+                    "seatV":24,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":25,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":26,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":27,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":28,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                },{
+                    "seatV":29,
+                    "seatR":12,
+                    "seatS":12,
+                    "seatA":13
+                }
         ],
         "price":{
-            "R":50000
+            "VIP":160000,
+            "R":130000,
+            "S":123123,
+            "A":80000
         },
         "rating":"A",
         "runningTime":"180min",
         "score":9.5,
-        "showInfo":"loremlorem"
+        "showInfo":[
+                " [공연시간 정보]\n ",
+                " 2023년 12월 19일(화) ~ 2024년 02월 25일(일) ",
+                " ※ 극장, 공연제작사 및 관계사의 협의에 따라 일부 좌석이 마감되었습니다.",
+                " Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                " The release date got pushed back to early 2014",
+                " You're getting far too cheeky!",
+                " What's remote? - Like this? What's remote?",
+                " The“ym” returns the number of remaining months past the last full year",
+                " Their number remains unclear.",
+                " with a valid social security number and credit card history.",
+                " address and credit card number."
+
+            ]
     }
 ]

@@ -21,9 +21,9 @@
             <div class="navBase">
                 <div class="navBar" style="background-image: url(./img/icon_image.png);">
                     <button class="navBtn" id="homeBtn">Home</button>
-                    <button class="navBtn">Concert</button>
-                    <button class="navBtn">Musical</button>
-                    <button class="navBtn">Exhibition</button>
+                    <button class="navBtn" id="concertBtn">Concert</button>
+                    <button class="navBtn" id="musicalBtn">Musical</button>
+                    <button class="navBtn" id="exhibitionBtn">Exhibition</button>
                 </div>
                 <div class="decoBar"></div>
             </div>
@@ -35,9 +35,9 @@
                 <div id="product0" class="product" style="display: none;">
                     <div id="thumbnailMain0" class="thumbnailMain" style="background-image: url(./img/pst_1025.jpg);"></div>
                     <div class="infoMain">
-                            <aside><button class="ticketBtn" id="ticketBtn0">Buy Ticket</button></aside>
+                            <aside><button class="ticketBtn" id="ticketBtn">Buy Ticket</button></aside>
                         <div class="infoTitle">
-                            <h3><span id="title1">IL TENORE</span> title</h3>
+                            <h3><span id="title1">IL TENORE</span> </h3>
                         </div>
                         <table>
                             <tr>
@@ -63,9 +63,9 @@
                 <div id="product1" class="product" style="display: none;">
                     <div id="thumbnailMain1" class="thumbnailMain" style="background-image: url(./img/pst_1025.jpg);"></div>
                     <div class="infoMain">
-                            <aside><button class="ticketBtn" id="ticketBtn1">Buy Ticket</button></aside>
+                            <aside><button class="ticketBtn" id="ticketBtn">Buy Ticket</button></aside>
                         <div class="infoTitle">
-                            <h3><span>[Location]</span> title</h3>
+                            <h3><span id="title2">[Location]</span> </h3>
                         </div>
                         <table>
                             <tr>
@@ -92,7 +92,7 @@
                     <div class="infoMain">
                             <aside><button class="ticketBtn" id="ticketBtn2">Buy Ticket</button></aside>
                         <div class="infoTitle">
-                            <h3><span>[Location]</span> title</h3>
+                            <h3><span id="title3">[Location]</span> </h3>
                         </div>
                         <table>
                             <tr>
@@ -114,6 +114,60 @@
                         </table>
                     </div>
                 </div>
+                <div id="product3" class="product" style="display: none;">
+                    <div id="thumbnailMain3" class="thumbnailMain" style="background-image: url(./img/pst_1025.jpg);"></div>
+                    <div class="infoMain">
+                            <aside><button class="ticketBtn" id="ticketBtn2">Buy Ticket</button></aside>
+                        <div class="infoTitle">
+                            <h3><span id="title4">[Location]</span> </h3>
+                        </div>
+                        <table>
+                            <tr>
+                                <td class="attribute">GENRE</td>
+                                <td id="genre3" class="">: Musical</td>
+                            </tr>
+                            <tr>
+                                <td class="attribute">VENUE</td>
+                                <td id="venue3" class="">: SKKU engineering building</td>
+                            </tr>
+                            <tr>
+                                <td class="attribute">DATE</td>
+                                <td id="date3" class="">: 2023.12.19 ~ 2024.02.25</td>
+                            </tr>
+                            <tr>
+                                <td class="attribute">PRICE</td>
+                                <td id="price3" class="">: VIP 160,000KRW | R 130,000KRW | S 100,000KRW | A 50,000KRW</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="product4" class="product" style="display: none;">
+                    <div id="thumbnailMain4" class="thumbnailMain" style="background-image: url(./img/pst_1025.jpg);"></div>
+                    <div class="infoMain">
+                            <aside><button class="ticketBtn" id="ticketBtn2">Buy Ticket</button></aside>
+                        <div class="infoTitle">
+                            <h3><span id="title5">[Location]</span> </h3>
+                        </div>
+                        <table>
+                            <tr>
+                                <td class="attribute">GENRE</td>
+                                <td id="genre4" class="">: Musical</td>
+                            </tr>
+                            <tr>
+                                <td class="attribute">VENUE</td>
+                                <td id="venue4" class="">: SKKU engineering building</td>
+                            </tr>
+                            <tr>
+                                <td class="attribute">DATE</td>
+                                <td id="date4" class="">: 2023.12.19 ~ 2024.02.25</td>
+                            </tr>
+                            <tr>
+                                <td class="attribute">PRICE</td>
+                                <td id="price4" class="">: VIP 160,000KRW | R 130,000KRW | S 100,000KRW | A 50,000KRW</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -122,14 +176,14 @@
         <div class="container">
             <div class="row">
                 <div class = "De_title" id="De_title">
-                    <h1>뮤지컬 일 테노레 (IL TENORE)</h1>
+                    <h1 id="detailTitle">뮤지컬 일 테노레 (IL TENORE)</h1>
                 </div>
             </div>
             <div class="row">
                 <div class= "De_info">
                     <div class="De_img">
                         <div class="img-box">
-                            <img src="img/M_1.jpg" alt="about me">
+                            <img id="detailImg" src="img/M_1.jpg" alt="about me">
                         </div>
                     </div>
                     <div class="about_De">
@@ -452,7 +506,6 @@
                     </div>
                     <div class="mpReInfo">
                         <span id="mpRI"></span>
-                        공연 이름 - 공연 일시 1 <br>
                     </div>
                 </div>
             </div>
