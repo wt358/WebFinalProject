@@ -82,5 +82,89 @@
         "runningTime":"180min",
         "score":9.5,
         "showInfo":"loremlorem"
+    },
+    {
+        "showId":"12345",
+        "name":"IL TENORE",
+        "Genre":"Musical",
+        "thumbnail":"./img/pst_1025.jpg",
+        "Venue":"SKKU ConcertHall",
+        "start_date":"2023-04-04T00:00:00",
+        "end_date":"2023-04-04T00:00:00",
+        "remainSeatV":[
+            {
+                "seatV":25,
+                "seatR":1,
+                "seatS":1,
+                "seatA":123
+            },
+            {
+
+            }
+        ],
+        "price":{
+            "VIP":160000,
+            "R":130000,
+            "S":123123,
+            "A":80000
+        },
+        "rating":"19",
+        "runningTime":"160min",
+        "score":9.0,
+        "showInfo":"loremlorem"
+    },
+    {
+        "showId":"11111",
+        "name":"Concert Bol4",
+        "Genre":"Concert",
+        "thumbnail":"./img/concert_bol4.png",
+        "Venue":"SKKU ConcertHall1",
+        "start_date":"2023-12-24T00:00:00",
+        "end_date":"2023-12-25T00:00:00",
+        "remainSeatV":[
+            {
+                "seatV":25,
+                "seatR":1,
+                "seatS":1,
+                "seatA":123
+            },
+            {
+
+            }
+        ],
+        "price":{
+            "VIP":160000,
+            "R":130000,
+            "S":100000,
+            "A":80000
+        },
+        "rating":"A",
+        "runningTime":"180min",
+        "score":9.5,
+        "showInfo":"loremlorem"
+    },
+    {
+        "showId":"22222",
+        "name":"Vincent Van Gogh Exhibition",
+        "Genre":"Exhibition",
+        "thumbnail":"./img/exhibition_gogh.png",
+        "Venue":"SKKU ConcertHall3",
+        "start_date":"2023-12-20T00:00:00",
+        "end_date":"2023-12-30T00:00:00",
+        "remainSeatV":[
+            {
+                "seatR":123
+            },
+            {
+
+            }
+        ],
+        "price":{
+            "R":50000
+        },
+        "rating":"A",
+        "runningTime":"180min",
+        "score":9.5,
+        "showInfo":"loremlorem"
     }
 ]

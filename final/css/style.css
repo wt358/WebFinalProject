@@ -344,6 +344,11 @@ th{
   grid-template-columns: 40% 60%;
 }
 
+.Select_V{
+  display: flex; 
+  align-items: center;
+}
+
 .Select_R{
   display: flex; 
   align-items: center;
