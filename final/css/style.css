@@ -66,6 +66,10 @@ header .headerMenu :hover{
   
 }
 
+.mainHeader #userName{
+    margin-right: 25px;
+    font-style: italic;
+}
 .navBase{
   display: grid;
   /* grid-template-columns: 1fr 1170px 1fr; */

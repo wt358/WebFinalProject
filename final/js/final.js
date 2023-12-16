@@ -22,7 +22,7 @@ function makeShowList(navMode){
     //     $('#{}')
     // }
 
-    for(let i=0;i<5;i++)
+    for(let i=0;i<6;i++)
         $(`#product${i}`).hide();
 
     for(let i=0;i<showList.length;i++){
@@ -109,10 +109,13 @@ $(document).ready(function() {
     
 
     if("currentUser" in localStorage){
+        $('#userName').show()
+        $('#userName').text(`Welcome!    ${localStorage.getItem("currentUser")}`)
         $('#headerSignUp').hide();
         $('#headerLogin').text("Logout");
         $('#headermp').show();
     }else{
+        $('#userName').hide()
         $('#headerSignUp').show();
         $('#headerLogin').text("Login");
         $('#headermp').hide();
